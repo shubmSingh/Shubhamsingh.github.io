@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shubham Singh | Backend Software Engineer with 4+ years of experience in Java, Spring Boot, Kafka, Apache Flink, AWS, microservices, and distributed systems."
+    />
+    <meta
+      name="keywords"
+      content="Backend Software Engineer, Java Developer, Spring Boot, Kafka, Apache Flink, AWS, Microservices, Hyderabad, Java, Software Engineer"
+    />
     <title>Shubham Singh | Resume</title>
     <style>
       :root {
@@ -236,19 +244,60 @@
         }
       }
 
+      @page {
+        size: A4;
+        margin: 0.5in;
+      }
+
       @media print {
+        html {
+          background: #fff;
+        }
+
         body {
-          background: white;
+          background: #fff;
+          color: #111;
         }
 
         .resume-shell {
-          box-shadow: none;
+          max-width: 100%;
           margin: 0;
           border-radius: 0;
+          box-shadow: none;
+          border-color: rgba(0,0,0,0.12);
+          background: #fff;
+          color: #111;
         }
 
-        .button {
-          display: none;
+        .resume-header,
+        .sidebar,
+        .main {
+          background: #fff;
+        }
+
+        .sidebar {
+          border-right: 1px solid rgba(0,0,0,0.12);
+        }
+
+        .title,
+        .name,
+        .entry-title,
+        .entry-meta,
+        .entry p,
+        .entry li,
+        .info-list li,
+        .chip {
+          color: #111 !important;
+        }
+
+        .chip {
+          background: #f5f7fa;
+          border-color: rgba(0,0,0,0.12);
+        }
+
+        .button,
+        .nav-actions {
+          display: none !important;
         }
       }
     </style>
@@ -261,7 +310,7 @@
           <p class="title">Backend Software Engineer</p>
         </div>
         <div class="nav-actions">
-          <button class="button primary" onclick="window.print()">Save as PDF</button>
+          <a class="button primary" href="javascript:window.print()" aria-label="Download resume as PDF">Download PDF</a>
           <a class="button" href="index.html">Back to Portfolio</a>
         </div>
       </header>
@@ -273,8 +322,9 @@
             <ul class="info-list">
               <li>Email: Shubhammcmt@gmail.com</li>
               <li>Location: Hyderabad, India</li>
-              <li>LinkedIn: /in/shubham-singh-8b05b8184</li>
+              <li>LinkedIn: linkedin.com/in/shubham-singh-8b05b8184</li>
               <li>GitHub: github.com/shubmSingh</li>
+              <li>Portfolio: shubmSingh.github.io</li>
             </ul>
           </div>
 
@@ -315,13 +365,26 @@
 
         <main class="main">
           <section class="section">
-            <h3>Profile</h3>
+            <h3>Professional Summary</h3>
             <div class="entry">
               <p>
                 Backend Software Engineer with 4+ years of experience building scalable, low-latency distributed systems using Java,
                 Spring Boot, Kafka, and AWS. Experienced in designing cloud-native microservices and high-throughput financial platforms
                 processing millions of transactions daily.
               </p>
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>Core Competencies</h3>
+            <div class="entry">
+              <ul>
+                <li>Java, Spring Boot, Spring Cloud, Hibernate, REST APIs, Microservices</li>
+                <li>Distributed Systems, Event-Driven Architecture, Cloud-Native Design</li>
+                <li>Apache Flink, Kafka, JDBC, SQL Optimization, Batch Processing</li>
+                <li>MySQL, PostgreSQL, Oracle, AWS, Docker, Kubernetes, EKS, Helm, Terraform</li>
+                <li>JUnit, Mockito, SonarLint, CI/CD, GitHub Copilot</li>
+              </ul>
             </div>
           </section>
 
@@ -372,21 +435,6 @@
           </section>
 
           <section class="section">
-            <h3>Technical Skills</h3>
-            <div class="entry">
-              <ul>
-                <li><strong>Languages:</strong> Java, C, C++, SQL</li>
-                <li><strong>Frameworks:</strong> Spring Boot, Spring Cloud, Hibernate, REST APIs, Microservices</li>
-                <li><strong>Architecture:</strong> Distributed Systems, Event-Driven Architecture, Cloud-Native Design</li>
-                <li><strong>Data &amp; Messaging:</strong> Apache Flink, Kafka, JDBC</li>
-                <li><strong>Databases:</strong> MySQL, PostgreSQL, Oracle</li>
-                <li><strong>Cloud &amp; DevOps:</strong> AWS, Docker, Kubernetes, EKS, Helm, Terraform, CI/CD</li>
-                <li><strong>Testing &amp; Tools:</strong> JUnit, Mockito, SonarLint, GitHub Copilot</li>
-              </ul>
-            </div>
-          </section>
-
-          <section class="section">
             <h3>Education</h3>
             <div class="entry">
               <div class="entry-header">
@@ -399,12 +447,12 @@
           </section>
 
           <section class="section">
-            <h3>Achievements</h3>
+            <h3>Certifications &amp; Achievements</h3>
             <div class="entry">
               <ul>
                 <li>AWS Certified Solutions Architect – Associate</li>
-                <li>Delivered and scaled production backend systems at J.P. Morgan Chase &amp; Co., processing 10M+ financial transactions daily under strict SLA and reliability requirements.</li>
                 <li>Backbase Internal Backend Certification</li>
+                <li>Delivered and scaled production backend systems at J.P. Morgan Chase &amp; Co., processing 10M+ financial transactions daily under strict SLA and reliability requirements.</li>
               </ul>
             </div>
           </section>
@@ -413,3 +461,4 @@
     </div>
   </body>
 </html>
+

@@ -1,21 +1,31 @@
 (function ($) {
-  "use strict";
+  'use strict';
 
-  $('.navbar-toggler').on('click', function () {
-    $(this).toggleClass('collapsed');
-  });
+  const revealItems = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  revealItems.forEach((item) => revealObserver.observe(item));
 
   if ($('.text-slider').length === 1) {
-    var typedStrings = $('.text-slider-items').text();
+    const typedStrings = $('.text-slider-items').text();
     new Typed('.text-slider', {
       strings: typedStrings.split(','),
-      typeSpeed: 90,
-      backSpeed: 35,
-      loop: true,
-      backDelay: 1200
+      typeSpeed: 80,
+      backDelay: 1200,
+      backSpeed: 30,
+      loop: true
     });
   }
 
-  $('#year').text(new Date().getFullYear());
+  document.getElementById('year').textContent = new Date().getFullYear();
 })(jQuery);
-

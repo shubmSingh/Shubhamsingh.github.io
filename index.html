@@ -5,44 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Shubham Singh is a Backend Software Engineer specializing in Java, Spring Boot, Kafka, Flink, AWS, microservices, and AI-enabled backend systems."
+      content="Shubham Singh is a Backend Software Engineer building scalable systems with Java, Spring Boot, Kafka, Flink, AWS, and AI-enabled backend platforms."
     />
     <title>Shubham Singh | Backend Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="lib/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="lib/font-awesome/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="lib/ionicons/css/ionicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="site-header">
       <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="brand" href="#home">Shubham Singh</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+        <div class="container nav-wrap">
+          <a class="brand" href="#home">Shubham<span>.</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
@@ -53,7 +33,6 @@
               <li><a href="#about">About</a></li>
               <li><a href="#skills">Skills</a></li>
               <li><a href="#projects">Projects</a></li>
-              <li><a href="#experience">Experience</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -63,27 +42,24 @@
 
     <main>
       <section class="hero section" id="home">
-        <div class="hero-glow"></div>
-        <div class="container hero-inner">
+        <div class="hero-noise"></div>
+        <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-7">
-              <div class="eyebrow">Backend Software Engineer</div>
-              <h1>
-                Building scalable services for
-                <span class="text-gradient text-slider-items">Java, Spring Boot, Kafka, Flink, AWS</span>
-                <span class="typed-text text-slider"></span>
+              <div class="eyebrow reveal">Backend Software Engineer</div>
+              <h1 class="reveal">
+                I build systems that are
+                <span class="text-gradient">fast, resilient, and scale-ready.</span>
               </h1>
-              <p class="lead">
-                I design and operate event-driven backend systems that are resilient,
-                observable, and built to scale. My focus spans Java 21, Spring Boot,
-                microservices, distributed systems, Kafka pipelines, cloud-native deployment,
-                and AI-enabled backend engineering.
+              <p class="lead reveal">
+                Java 21, Spring Boot, Kafka, Apache Flink, distributed systems, cloud-native architecture,
+                and AI-enabled backend engineering—focused on building reliable software that performs under pressure.
               </p>
-              <div class="hero-actions">
+              <div class="hero-actions reveal">
                 <a class="btn btn-primary" href="#projects">View Projects</a>
-                <a class="btn btn-secondary" href="#contact">Let's Talk</a>
+                <a class="btn btn-secondary" href="resume.html" download="Shubham-Singh-Resume.html">Download Resume</a>
               </div>
-              <div class="hero-tags">
+              <div class="hero-tags reveal">
                 <span>Java 21</span>
                 <span>Spring Boot</span>
                 <span>Kafka</span>
@@ -92,27 +68,28 @@
                 <span>Kubernetes</span>
               </div>
             </div>
+
             <div class="col-lg-5">
-              <div class="profile-card">
+              <div class="profile-card reveal">
                 <div class="profile-image-wrap">
                   <img src="img/shubham.jpg" alt="Shubham Singh" />
                 </div>
-                <div class="profile-card-content">
-                  <h3>Shubham Singh</h3>
-                  <p>Backend Systems • Distributed Architecture • AI-Ready Platforms</p>
-                  <div class="mini-metrics">
-                    <div>
-                      <strong>5+</strong>
-                      <span>Years</span>
-                    </div>
-                    <div>
-                      <strong>10M+</strong>
-                      <span>Events/day</span>
-                    </div>
-                    <div>
-                      <strong>99.9%</strong>
-                      <span>Reliability focus</span>
-                    </div>
+                <div class="profile-meta">
+                  <p class="meta-label">Currently focused on</p>
+                  <h3>Backend Systems • Distributed Architecture • AI-Ready Platforms</h3>
+                </div>
+                <div class="metric-row">
+                  <div>
+                    <strong>5+</strong>
+                    <span>Years</span>
+                  </div>
+                  <div>
+                    <strong>10M+</strong>
+                    <span>Events/day</span>
+                  </div>
+                  <div>
+                    <strong>99.9%</strong>
+                    <span>Reliability mindset</span>
                   </div>
                 </div>
               </div>
@@ -123,31 +100,29 @@
 
       <section class="section" id="about">
         <div class="container">
-          <div class="section-heading">
+          <div class="section-heading reveal">
             <span class="section-kicker">About</span>
-            <h2>Backend engineer with a systems mindset</h2>
+            <h2>Engineering backend systems with clarity, scale, and resilience.</h2>
           </div>
+
           <div class="about-grid">
-            <div class="about-card">
+            <div class="glass-card reveal">
               <p>
-                I’m a Backend Software Engineer with 5+ years of experience designing and
-                operating production-grade systems for high-throughput, event-driven, and
-                cloud-native workloads.
+                I’m a Backend Software Engineer with 5+ years of experience designing and operating production-grade systems for modern software businesses.
               </p>
               <p>
-                My work blends API design, service architecture, data pipelines, observability,
-                and reliability engineering. I enjoy turning complex problems into scalable,
-                maintainable systems that teams can trust in production.
+                My focus sits at the intersection of backend engineering, distributed systems, event-driven architecture, API design, performance optimization, and cloud-native delivery.
               </p>
             </div>
-            <div class="about-card">
+
+            <div class="glass-card reveal">
               <ul class="check-list">
-                <li>Java 21, Spring Boot, REST APIs, gRPC patterns</li>
-                <li>Kafka, Apache Flink, event-driven architecture</li>
-                <li>PostgreSQL, MySQL, MongoDB, Redis</li>
-                <li>AWS, Docker, Kubernetes, CI/CD</li>
-                <li>Observability, rate limiting, retries, resilience</li>
-                <li>LLM/RAG/MCP exploration for backend innovation</li>
+                <li>Java 21 and Spring Boot-based backend services</li>
+                <li>Kafka, Flink, and asynchronous processing patterns</li>
+                <li>REST APIs, microservices, and service boundaries</li>
+                <li>AWS, Docker, Kubernetes, CI/CD workflows</li>
+                <li>Observability, resilience, retries, and rate limiting</li>
+                <li>LLM/RAG/MCP experimentation for AI-enabled backend work</li>
               </ul>
             </div>
           </div>
@@ -156,40 +131,41 @@
 
       <section class="section dark-panel" id="skills">
         <div class="container">
-          <div class="section-heading centered">
+          <div class="section-heading reveal centered">
             <span class="section-kicker">Core Skills</span>
-            <h2>Engineering capabilities that matter in production</h2>
+            <h2>Capabilities that matter in production environments.</h2>
           </div>
+
           <div class="skills-grid">
-            <div class="skill-card">
+            <div class="skill-card reveal">
               <i class="fa-solid fa-server"></i>
               <h3>Backend Architecture</h3>
-              <p>Microservices, service boundaries, API contracts, inter-service communication.</p>
+              <p>Microservices, scalable service design, API contracts, request flows, and deployment-ready systems.</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
               <i class="fa-solid fa-bolt"></i>
               <h3>Messaging & Streaming</h3>
-              <p>Kafka-based pipelines, consumer patterns, partitioning, retries, DLQ design.</p>
+              <p>Kafka pipelines, consumer groups, event-driven integration, retries, DLQ patterns, and throughput planning.</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
               <i class="fa-solid fa-chart-line"></i>
-              <h3>Performance Tuning</h3>
-              <p>Latency optimization, throughput gains, JIT profiling, concurrency tuning.</p>
+              <h3>Performance</h3>
+              <p>Profiling bottlenecks, tuning latency, improving throughput, and optimizing runtime behavior for scale.</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
               <i class="fa-solid fa-cloud"></i>
               <h3>Cloud & DevOps</h3>
-              <p>AWS deployment, Docker packaging, Kubernetes orchestration, CI/CD workflows.</p>
+              <p>AWS deployment, Kubernetes orchestration, Dockerized environments, and infrastructure-aware engineering.</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
               <i class="fa-solid fa-database"></i>
-              <h3>Data & Storage</h3>
-              <p>SQL and NoSQL design, caching, indexing, read/write optimization, queries.</p>
+              <h3>Data & Caching</h3>
+              <p>Database optimization, indexing, logical data design, Redis usage, and efficient persistence patterns.</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card reveal">
               <i class="fa-solid fa-brain"></i>
               <h3>AI + Backend</h3>
-              <p>LLM application patterns, RAG, MCP tooling, agentic workflows in backend systems.</p>
+              <p>Exploring LLM integrations, RAG workflows, MCP-based tooling, and AI-assisted backend experiences.</p>
             </div>
           </div>
         </div>
@@ -197,124 +173,112 @@
 
       <section class="section" id="projects">
         <div class="container">
-          <div class="section-heading centered">
+          <div class="section-heading reveal centered">
             <span class="section-kicker">Projects</span>
-            <h2>Selected work with real GitHub repositories</h2>
+            <h2>Selected work from my GitHub repositories.</h2>
           </div>
+
           <div class="projects-grid">
-            <article class="project-card">
+            <article class="project-card reveal">
               <div class="project-topline">
                 <span class="project-type">Java / Spring Boot</span>
                 <a href="https://github.com/shubmSingh/Microservices" target="_blank" rel="noreferrer">GitHub</a>
               </div>
               <h3>Microservices</h3>
-              <p>Exploration into service-oriented backend patterns, modular system design, and distributed app building.</p>
+              <p>Exploring modular service-oriented architecture and distributed application design for scalable backend systems.</p>
               <ul>
                 <li>Spring Boot services</li>
-                <li>API separation</li>
-                <li>Scalable service boundaries</li>
+                <li>Service boundaries</li>
+                <li>Scalable backend patterns</li>
               </ul>
             </article>
 
-            <article class="project-card">
+            <article class="project-card reveal">
               <div class="project-topline">
                 <span class="project-type">Java / REST</span>
                 <a href="https://github.com/shubmSingh/ProductService" target="_blank" rel="noreferrer">GitHub</a>
               </div>
               <h3>ProductService</h3>
-              <p>RESTful backend service focused on product management, business logic, and clean service APIs.</p>
+              <p>Backend service focused on product management logic and clean API design in a business-centric domain model.</p>
               <ul>
-                <li>API design</li>
-                <li>Business domain logic</li>
-                <li>Backend service flow</li>
+                <li>Service logic</li>
+                <li>Domain modeling</li>
+                <li>API structure</li>
               </ul>
             </article>
 
-            <article class="project-card">
+            <article class="project-card reveal">
               <div class="project-topline">
                 <span class="project-type">API Integration</span>
                 <a href="https://github.com/shubmSingh/WeatherApp-using-API" target="_blank" rel="noreferrer">GitHub</a>
               </div>
               <h3>WeatherApp using API</h3>
-              <p>Application that accepts client-side queries and fetches live weather data from an external API.</p>
+              <p>Weather data application that requests live information from an external API and renders the result for user consumption.</p>
               <ul>
                 <li>API consumption</li>
-                <li>Frontend-backend communication</li>
-                <li>Real-time data retrieval</li>
+                <li>Data retrieval</li>
+                <li>Application integration</li>
               </ul>
             </article>
 
-            <article class="project-card">
+            <article class="project-card reveal">
               <div class="project-topline">
-                <span class="project-type">Java / REST APIs</span>
+                <span class="project-type">REST Services</span>
                 <a href="https://github.com/shubmSingh/RestFullWeb-Services" target="_blank" rel="noreferrer">GitHub</a>
               </div>
               <h3>RestFullWeb-Services</h3>
-              <p>RESTful web services project demonstrating API layering, web service design, and backend integration.</p>
+              <p>RESTful web service implementation showing resource modeling, service boundaries, and clean API development patterns.</p>
               <ul>
                 <li>Resource modeling</li>
-                <li>Request/response contracts</li>
-                <li>Service separation</li>
+                <li>Service design</li>
+                <li>API flow</li>
               </ul>
             </article>
 
-            <article class="project-card">
+            <article class="project-card reveal">
               <div class="project-topline">
                 <span class="project-type">Java / Patterns</span>
                 <a href="https://github.com/shubmSingh/DesignPattern" target="_blank" rel="noreferrer">GitHub</a>
               </div>
               <h3>DesignPattern</h3>
-              <p>Repository for study and implementation of software design patterns used in modern backend engineering.</p>
+              <p>Repository illustrating reusable design approaches used in software systems to improve maintainability and clarity.</p>
               <ul>
                 <li>Clean architecture</li>
-                <li>Reusable solutions</li>
+                <li>Pattern-driven design</li>
                 <li>Maintainability</li>
-              </ul>
-            </article>
-
-            <article class="project-card">
-              <div class="project-topline">
-                <span class="project-type">Java / App</span>
-                <a href="https://github.com/shubmSingh/CabBooking-" target="_blank" rel="noreferrer">GitHub</a>
-              </div>
-              <h3>CabBooking</h3>
-              <p>Standalone Java application for booking and managing transportation services efficiently.</p>
-              <ul>
-                <li>Business workflow</li>
-                <li>User booking flow</li>
-                <li>System logic modeling</li>
               </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section dark-panel" id="experience">
+      <section class="section dark-panel">
         <div class="container">
-          <div class="section-heading centered">
+          <div class="section-heading reveal centered">
             <span class="section-kicker">Experience</span>
-            <h2>What I bring to backend engineering teams</h2>
+            <h2>What I bring to backend and platform teams.</h2>
           </div>
+
           <div class="experience-grid">
-            <div class="exp-card">
+            <div class="exp-card reveal">
               <span class="exp-number">01</span>
-              <h3>Scalable backend systems</h3>
-              <p>Designing resilient APIs and distributed services for systems that need to handle growth without losing performance.</p>
+              <h3>Scalable Service Design</h3>
+              <p>Designing systems that can evolve without sacrificing reliability or maintainability.</p>
             </div>
-            <div class="exp-card">
+            <div class="exp-card reveal">
               <span class="exp-number">02</span>
-              <h3>Event-driven architecture</h3>
-              <p>Implementing asynchronous processing, messaging, retries, observability, and downstream consistency models.</p>
+              <h3>Event-Driven Systems</h3>
+              <p>Building async flows and stream processing patterns for real-time and high-throughput workloads.</p>
             </div>
-            <div class="exp-card">
+            <div class="exp-card reveal">
               <span class="exp-number">03</span>
-              <h3>Production reliability</h3>
-              <p>Improving availability, latency, failure handling, and system visibility using monitoring and operational best practices.</p>
+              <h3>Operational Excellence</h3>
+              <p>Improving observability, failure handling, rate limits, retry behavior, and system resilience.</p>
             </div>
-            <div class="exp-card">
+            <div class="exp-card reveal">
               <span class="exp-number">04</span>
-              <h3>AI-ready backend work</h3>
-              <p>Exploring LLM integrations, RAG-driven patterns, tool invocation, and MCP-based backend workflows.</p>
+              <h3>AI-Enabled Backend</h3>
+              <p>Exploring LLM integrations and AI workflow patterns for backend-driven product experiences.</p>
             </div>
           </div>
         </div>
@@ -322,15 +286,15 @@
 
       <section class="section certifications">
         <div class="container">
-          <div class="section-heading centered">
+          <div class="section-heading reveal centered">
             <span class="section-kicker">Certifications</span>
-            <h2>Credentials and continuous learning</h2>
+            <h2>Continuous learning and professional validation.</h2>
           </div>
           <div class="cert-grid">
-            <div class="cert-item">
-              <img src="https://img.shields.io/badge/AWS-Certified_Solutions_Architect_Associate-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS Solutions Architect Associate" />
+            <div class="cert-item reveal">
+              <img src="https://img.shields.io/badge/AWS-Certified_Solutions_Architect_Associate-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS Certified Solutions Architect Associate" />
             </div>
-            <div class="cert-item">
+            <div class="cert-item reveal">
               <img src="https://img.shields.io/badge/Backbase-Backend_Engineering_Certified-2563EB?style=for-the-badge" alt="Backbase Backend Engineering Certified" />
             </div>
           </div>
@@ -341,8 +305,8 @@
     <footer class="site-footer" id="contact">
       <div class="container footer-inner">
         <div>
-          <span class="section-kicker">Let's connect</span>
-          <h3>Open to backend, distributed systems, and AI-enabled engineering roles</h3>
+          <span class="section-kicker">Let’s connect</span>
+          <h3>Open to backend engineering, distributed systems, and AI-enabled product opportunities.</h3>
         </div>
         <div class="contact-links">
           <a href="mailto:Shubhammcmt@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
@@ -359,3 +323,4 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+

@@ -255,16 +255,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile-image-wrap {
+  width: min(100%, 360px);
+  aspect-ratio: 1 / 1;
+  margin: 0 auto 18px;
   overflow: hidden;
-  border-radius: 22px;
-  border: 1px solid rgba(148, 163, 184, 0.12);
-  margin-bottom: 18px;
+  border-radius: 50%;
+  border: 3px solid rgba(142, 197, 255, 0.25);
+  box-shadow: 0 18px 40px rgba(11, 18, 28, 0.6), inset 0 0 0 1px rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.02);
 }
 
 .profile-image-wrap img {
   width: 100%;
-  height: 420px;
+  height: 100%;
   object-fit: cover;
+  object-position: center top;
+  transform: scale(1.08);
 }
 
 .profile-meta {
@@ -594,8 +600,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 90px;
   }
 
-  .profile-image-wrap img {
-    height: 280px;
+  .profile-image-wrap {
+    width: min(100%, 260px);
   }
 
   .navbar-nav {
@@ -604,4 +610,3 @@ h1, h2, h3, h4, h5, h6 {
     padding: 16px 0 10px;
   }
 }
-
